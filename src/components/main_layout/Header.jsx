@@ -1,6 +1,19 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Header(){
+    const [isLogin, setIsLogin] = useState(false);
+    useEffect(() => {
+        let userData = localStorage.getItem("login");
+        if(userData){
+            userData = JSON.parse(userData);
+            setIsLogin(true);
+        }
+    },[]);
+    function handleLogout(){
+        setIsLogin(false);
+        localStorage.removeItem("login");
+    }
     return (
         <header>
             <div className="content">
@@ -9,10 +22,15 @@ function Header(){
                 </div>
                 <div className="menu">
                     <ul>
-                        <li><Link to='/'>Products</Link></li>
-                        <li><i className="fa-solid fa-cart-shopping"></i></li>
-                        <li><i className="fa-regular fa-user"></i></li>
-                        <li><i className="fa-solid fa-bars"></i></li>
+                        <li><Link to='/' className="pro">Products</Link></li>
+                        {isLogin ? (
+                        <>
+                            <li><i className="fa-solid fa-cart-shopping"></i></li>
+                            <li><i className="fa-regular fa-user"></i></li>
+                            <li><i className="fa-solid fa-bars"></i></li>
+                        </>
+                        ) : null}
+                        <li><Link to="/login" onClick={handleLogout} className="login">{isLogin ? "Logout" : "Login"}</Link></li>
                     </ul>
                 </div>
             </div>

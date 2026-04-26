@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import ProductList from './components/products/ProductList';
+import Login from './components/auth/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
       <App>
         <Routes>
           <Route index path='/' element={<ProductList/>}/>
+          <Route path='/login' element={<Login/>}/>
         </Routes>
       </App>
     </BrowserRouter>

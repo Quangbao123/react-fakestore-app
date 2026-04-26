@@ -13,12 +13,12 @@ function Footer() {
           <h4>Information</h4>
           <p>
             <a href="https://github.com/Quangbao123">
-              <i class="fa-brands fa-github"></i> GitHub
+              <i className="fa-brands fa-github"></i> GitHub
             </a>
           </p>
           <p>
             <a href="https://www.linkedin.com/in/bao-nguyen-quang-190345352/">
-              <i class="fa-brands fa-linkedin"></i> Linkedin
+              <i className="fa-brands fa-linkedin"></i> Linkedin
             </a>
           </p>
         </div>
