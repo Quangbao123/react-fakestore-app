@@ -25,7 +25,7 @@ function Header(){
                         <li><Link to='/' className="pro">Products</Link></li>
                         {isLogin ? (
                         <>
-                            <li><i className="fa-solid fa-cart-shopping"></i></li>
+                            <li><Link to='/cart'><i className="fa-solid fa-cart-shopping"></i> </Link></li>
                             <li><i className="fa-regular fa-user"></i></li>
                             <li><i className="fa-solid fa-bars"></i></li>
                         </>

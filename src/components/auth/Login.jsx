@@ -61,9 +61,20 @@ function Login(){
             axios.post("https://fakestoreapi.com/auth/login", dataLogin, config)
             .then(res => {
                 console.log(res);
-                localStorage.setItem("login", JSON.stringify(dataLogin));
-                navigate('/');
-                window.location.reload();
+                axios.get("https://fakestoreapi.com/users")
+                .then(userRes => {
+                    const user = userRes.data.find(u => u.username === inputs.username);
+                    const userId = user.id;
+                    let saveInfo = {
+                        token: res.data.token,
+                        userId: userId,
+                        username: user.username,
+                        password: user.password
+                    }
+                    localStorage.setItem("login", JSON.stringify(saveInfo));
+                    navigate('/');
+                    window.location.reload();
+                })
             })
             .catch(err => {
                 console.log(err);

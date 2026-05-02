@@ -10,6 +10,7 @@ import {
 import reportWebVitals from './reportWebVitals';
 import ProductList from './components/products/ProductList';
 import Login from './components/auth/Login';
+import Cart from './components/carts/Cart';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
         <Routes>
           <Route index path='/' element={<ProductList/>}/>
           <Route path='/login' element={<Login/>}/>
+          <Route path='/cart' element={<Cart/>}/>
         </Routes>
       </App>
     </BrowserRouter>

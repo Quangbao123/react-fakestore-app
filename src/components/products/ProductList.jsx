@@ -41,12 +41,27 @@ function ProductList(){
                     </div>
                     <div className="price">
                         <p>${item.price}</p>
-                        <button>Add to Cart</button>
+                        <button onClick={() => addToCart(item)}>Add to Cart</button>
                     </div>
                 </div>
             )
         })
     }
+    function addToCart(item){
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const existing = cart.find(p => p.id === item.id);
+        if(existing){
+            existing.quantity += 1;
+        }else{
+            cart.push({
+                ...item,
+                quantity: 1
+            });
+        }   
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("Added to cart!");
+    }
+
     function handleFilter(){
         return categories.map((cate) => {
             return (
