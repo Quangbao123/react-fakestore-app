@@ -54,7 +54,6 @@ function Cart(){
                     let newQty = item.quantity;
                     if(type === "inc") newQty++;
                     if(type === "dec" && newQty > 1) newQty--;
-                    else alert("Can't decrease the product quantity");
                     return { ...item, quantity: newQty };
                 }
                 return item;

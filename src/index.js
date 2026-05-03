@@ -11,6 +11,7 @@ import reportWebVitals from './reportWebVitals';
 import ProductList from './components/products/ProductList';
 import Login from './components/auth/Login';
 import Cart from './components/carts/Cart';
+import Profile from './components/users/UserProfile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +22,7 @@ root.render(
           <Route index path='/' element={<ProductList/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/cart' element={<Cart/>}/>
+          <Route path='/profile' element={<Profile/>}/>
         </Routes>
       </App>
     </BrowserRouter>

@@ -199,6 +199,7 @@ footer .contact a{
 
 /* Cart */
 .cart .con{
+    background: #f5f7fa;
     width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -289,4 +290,99 @@ footer .contact a{
     padding: 20px;
     border-radius: 10px;
     font-size: 17px;
+}
+
+/* Profile */
+.profile {
+    background: #f5f7fa;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.profile .container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.profile #title {
+    margin: 30px 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.profile-detail {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.avatar-container .image {
+    width: 80px;
+    height: 80px;
+    background: #e6f0ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar-container .image i {
+    font-size: 50px;
+    color: #3b82f6;
+}
+.avatar-info {
+    margin-left: 20px;
+}
+.avatar-info h2 {
+    margin: 0;
+    font-size: 20px;
+}
+.avatar-info p {
+    margin: 5px 0 0;
+    color: gray;
+}
+.email-container,
+.phone-container,
+.password-container,
+.address-container {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.email-container h2,
+.phone-container h2,
+.password-container h2,
+.address-container h2 {
+    width: 40px;
+    text-align: center;
+    color: #6b7280;
+}
+.email-container .info,
+.phone-container .info,
+.password-container .info,
+.address-container .info{
+    padding-left: 20px;
+}
+.email-container p,
+.phone-container p,
+.password-container p,
+.address-container p{
+    margin: 5px 0 0;
+    color: gray;
+}
+.edit-btn{
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.edit-btn button{
+    padding: 15px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
 }
