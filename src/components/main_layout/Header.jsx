@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Header(){
     const [isLogin, setIsLogin] = useState(false);
     useEffect(() => {
-        let userData = localStorage.getItem("login");
+        let userData = localStorage.getItem("fakestore_login");
         if(userData){
             userData = JSON.parse(userData);
             setIsLogin(true);
@@ -12,7 +12,7 @@ function Header(){
     },[]);
     function handleLogout(){
         setIsLogin(false);
-        localStorage.removeItem("login");
+        localStorage.removeItem("fakestore_login");
     }
     return (
         <header>

@@ -71,7 +71,7 @@ function Login(){
                         username: user.username,
                         password: user.password
                     }
-                    localStorage.setItem("login", JSON.stringify(saveInfo));
+                    localStorage.setItem("fakestore_login", JSON.stringify(saveInfo));
                     navigate('/');
                     window.location.reload();
                 })

@@ -11,7 +11,7 @@ function Cart(){
     );
 
     useEffect(() => {
-        let userData = localStorage.getItem("login");
+        let userData = localStorage.getItem("fakestore_login");
         const localCart = localStorage.getItem("cart");
 
         if(localCart){
