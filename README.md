@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+# React FakeStore App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive e-commerce web application built with React and FakeStore API for learning modern frontend development concepts, including state management, routing, API integration, and local persistence.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project simulates the core functionalities of an online shopping platform. Users can browse products, view detailed information, manage a shopping cart, authenticate with a mock API, and edit their profiles.
 
-### `npm start`
+The application was developed as a practice project to strengthen skills in React ecosystem technologies and prepare for full-stack development with Flask and Django.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Homepage
+<img width="1912" height="1086" alt="Screenshot 2026-06-15 130853" src="https://github.com/user-attachments/assets/a9527078-b75d-42ff-9ff4-b72300259d2d" />
 
-### `npm test`
+### Shopping Cart
+<img width="1915" height="1091" alt="image" src="https://github.com/user-attachments/assets/fcfb8403-875a-4a69-975d-e9fd005efcf7" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### User Profile
+<img width="1918" height="1087" alt="image" src="https://github.com/user-attachments/assets/bd3dab04-7157-48bd-95b8-dc042582b502" />
 
-### `npm run build`
+## Live Demo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Demo: 
+* Repository: https://github.com/Quangbao123/react-fakestore-app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* User authentication using FakeStore API
+* Product listing with category filtering
+* Shopping cart management
+* Persistent cart data using Local Storage
+* User profile management
+* Form validation for profile editing
+* Responsive user interface
+* Client-side routing
 
-### `npm run eject`
+## Technology Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* React.js
+* React Router DOM
+* Redux Toolkit
+* Axios
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### API
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* FakeStore API
 
-## Learn More
+### Storage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Local Storage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Structure
 
-### Code Splitting
+```text
+src/
+├── components/
+├── pages/
+├── redux/
+├── services/
+├── assets/
+├── App.jsx
+└── main.jsx
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Installation
 
-### Analyzing the Bundle Size
+Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+git clone https://github.com/Quangbao123/react-fakestore-app.git
+```
 
-### Making a Progressive Web App
+Navigate to the project directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+cd react-fakestore-app
+```
 
-### Advanced Configuration
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm install
+```
 
-### Deployment
+Run the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm run dev / npm start
+```
 
-### `npm run build` fails to minify
+Open your browser and visit:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```text
+http://localhost:3000
+```
+
+## Learning Outcomes
+
+Through this project, I gained practical experience with:
+
+* Building reusable React components
+* Managing application state with Redux Toolkit
+* Consuming REST APIs using Axios
+* Handling form validation and controlled components
+* Implementing client-side routing
+* Persisting data with Local Storage
+* Organizing scalable frontend project structures
+
+## Limitations
+
+* FakeStore API does not persist user updates permanently.
+* Authentication is simulated and not production-ready.
+* Payment and order processing are not implemented.
+* Administrative dashboard is intentionally excluded to focus on frontend fundamentals.
+
+## Future Improvements
+
+* Integrate a custom Flask REST API
+* Connect to a relational database (MySQL or PostgreSQL)
+* Implement JWT authentication
+* Add search and pagination features
+* Migrate the backend to Django for advanced development
+* Deploy the project so that everyone can run and test
+
+## Author
+
+Nguyen Quang Bao
+
+* GitHub: https://github.com/Quangbao123
+* Email: nguyenquangbao575@gmail.com
+
+## License
+
+This project is developed for educational purposes.
