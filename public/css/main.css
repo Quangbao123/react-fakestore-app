@@ -379,7 +379,7 @@ footer .contact a{
     color: gray;
 }
 .edit-btn{
-    margin-top: 20px;
+    margin-top: 10px;
     padding-left: 10px;
 }
 .edit-btn button{
@@ -388,4 +388,31 @@ footer .contact a{
     border-radius: 10px;
     color: white;
     background-color: black;
+}
+
+/* Edit Profile */
+.name-input {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.contain-info {
+    width: 100%;
+}
+
+.contain-info input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.edit-btn .button_edit{
+    margin-top: 20px;
+}
+.edit-btn small{
+    color: red;
+    font-size: 14px;
 }
